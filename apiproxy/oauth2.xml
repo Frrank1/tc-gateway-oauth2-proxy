@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="4" name="oauth2">
+    <Basepaths>/v1/cc/oauth_ac</Basepaths>
+    <Basepaths>/v1/oauth2</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1493755428171</CreatedAt>
+    <CreatedBy>parth@topcoder.com</CreatedBy>
+    <Description>null</Description>
+    <DisplayName>OAuth20</DisplayName>
+    <LastModifiedAt>1493773847662</LastModifiedAt>
+    <LastModifiedBy>parth@topcoder.com</LastModifiedBy>
+    <Policies>
+        <Policy>AccessTokenRefresh</Policy>
+        <Policy>AccessTokenRequest</Policy>
+        <Policy>AccessTokenResponse</Policy>
+        <Policy>AccessTokenResponseCC</Policy>
+        <Policy>AccessTokenResponseRT</Policy>
+        <Policy>AddCors</Policy>
+        <Policy>AuthorizationCodeResponse</Policy>
+        <Policy>DeleteForwardedHeaders</Policy>
+        <Policy>GenerateAuthorizationCode</Policy>
+        <Policy>GetJWTSecret</Policy>
+        <Policy>InvalidUserCredentials</Policy>
+        <Policy>Javascript-GenerateJwt</Policy>
+        <Policy>JsonToXml</Policy>
+        <Policy>RedirectToLoginApp</Policy>
+        <Policy>Send404NotFoundResponse</Policy>
+        <Policy>SetAuthCodeParameters</Policy>
+        <Policy>SetValidTokenResponse</Policy>
+        <Policy>VerifyAPIKey</Policy>
+        <Policy>VerifyAccessToken</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://SetAuthCodeParameters.js</Resource>
+        <Resource>jsc://jwt/generateJwt.js</Resource>
+        <Resource>jsc://jwt/getRandomValues.js</Resource>
+        <Resource>jsc://jwt/isaac.js</Resource>
+        <Resource>jsc://jwt/json-sans-eval.js</Resource>
+        <Resource>jsc://jwt/jsrsasign-4.7.2-all-min.js</Resource>
+        <Resource>jsc://jwt/jws-3.2.js</Resource>
+        <Resource>jsc://jwt/prereqs.js</Resource>
+        <Resource>jsc://jwt/validateJwt.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>false</validate>
+</APIProxy>

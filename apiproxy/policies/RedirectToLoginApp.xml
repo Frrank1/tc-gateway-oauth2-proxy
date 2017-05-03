@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RedirectToLoginApp">
+    <DisplayName>RedirectToLoginApp</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers>
+                <Header name="Location">
+                    http://local.topcoder-dev.com:3000/gateway?client_id={request.queryparam.client_id}&amp;redirect_uri={request.queryparam.redirect_uri}&amp;response_type={request.queryparam.response_type}&amp;scope={request.queryparam.scope}
+                </Header>
+            </Headers>
+            <Payload contentType="text/plain">http://local.topcoder.com:3000/gateway?client_id={request.queryparam.client_id}&amp;redirect_uri={request.queryparam.redirect_uri}&amp;response_type={request.queryparam.response_type}&amp;scope={request.queryparam.scope}</Payload>
+            <StatusCode>302</StatusCode>
+            <ReasonPhrase>Found</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

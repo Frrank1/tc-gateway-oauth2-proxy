@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="true" enabled="true" name="AuthorizationCodeResponse">
+    <DisplayName>AuthorizationCodeResponse</DisplayName>
+    <AssignTo type="response" createNew="true"/>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <FaultRules/>
+    <Properties/>
+    <Set>
+        <Payload contentType="application/json" variablePrefix="%" variableSuffix="#">
+            {"code": "%oauthv2authcode.GenerateAuthorizationCode.code#", 
+            "redirect_uri":"%oauthv2authcode.GenerateAuthorizationCode.redirect_uri#"
+            }
+        </Payload>
+        <StatusCode>200</StatusCode>
+        <ReasonPhrase>OK</ReasonPhrase>
+    </Set>
+    <!-- Set this flow variable to indicate the response has been set -->
+    <!--<AssignVariable>-->
+    <!--    <Name>flowResponse.ready</Name>-->
+    <!--    <Value>true</Value>-->
+    <!--</AssignVariable>-->
+</AssignMessage>

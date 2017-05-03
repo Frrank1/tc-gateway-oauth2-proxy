@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Javascript timeLimit="1000" async="false" continueOnError="false" enabled="true" name="Javascript-GenerateJwt">
+    <DisplayName>Javascript-GenerateJwt</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <IncludeURL>jsc://jwt/prereqs.js</IncludeURL>
+    <IncludeURL>jsc://jwt/isaac.js</IncludeURL>
+    <IncludeURL>jsc://jwt/json-sans-eval.js</IncludeURL>
+    <IncludeURL>jsc://jwt/getRandomValues.js</IncludeURL>
+    <IncludeURL>jsc://jwt/jsrsasign-4.7.2-all-min.js</IncludeURL>
+    <IncludeURL>jsc://jwt/jws-3.2.js</IncludeURL>
+    <ResourceURL>jsc://jwt/generateJwt.js</ResourceURL>
+</Javascript>
